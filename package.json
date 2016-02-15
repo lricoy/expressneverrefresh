@@ -1,0 +1,18 @@
+{
+    "name": "ExpressNeverRefresh",
+    "version": "0.0.1",
+    "description": "HTTP Server Express skeleton with Gulp + Browsersync + Nodemon",
+    "keywords": ["express", "gulp", "browsersync", "nodemon"],
+    "homepage": "https://github.com/andrehrf/expressneverrefresh",
+    "author": "André Ferreira <andrehrf@gmail.com>",
+    "dependencies": {
+        "gulp": "^3.9.1",        
+        "gulp-nodemon": "^2.0.6",
+        "express": "^4.13.4",
+        "morgan": "^1.6.1",
+        "compression": "^1.6.0",
+        "cookie-parser": "1.4.1",
+        "body-parser": "^1.15.0",
+        "browser-sync": "^2.11.1"
+    }
+}
