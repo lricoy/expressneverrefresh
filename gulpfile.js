@@ -12,8 +12,7 @@ var gulp = require("gulp"),
     browserSync = require("browser-sync");
     
 gulp.task("default", ["browser-sync", "nodemon"], function(){
-    gulp.start("watch:html");
-    gulp.start("watch:js");
+
 });
 
 gulp.task("browser-sync", function(){
@@ -25,17 +24,8 @@ gulp.task("browser-sync", function(){
 });
 
 gulp.task("nodemon", function(){
-    nodemon({script: 'app.js'}).on("start");
-});
-
-gulp.task("watch:html", function () {
-    browserSync.watch("./public/*.html").on("change", function () {
-        browserSync.reload();
-    });
-});
-
-gulp.task("watch:js", function () {
-    browserSync.watch("./public/js/**/*.js").on("change", function () {
-        browserSync.reload("*.js");
-    });
+    nodemon({
+        script: 'app.js',
+        ignore: ["public/*"],
+    }).on("start");
 });

@@ -27,8 +27,4 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/public/index.html");
 });
 
-app.get("/login", function(req, res){
-    res.sendFile(__dirname + "/public/login.html");
-});
-
 app.listen(3000);
