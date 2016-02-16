@@ -5,7 +5,6 @@
  * @license MIT
  */
 
-
 'use strict';
 
 var express = require("express"),//Starting Express
@@ -27,4 +26,6 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/public/index.html");
 });
 
-app.listen(3000);
+http.listen(3000, function(){
+    console.log("Servidor HTTP rodando na porta: 3000");
+});
