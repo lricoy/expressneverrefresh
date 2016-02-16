@@ -11,6 +11,7 @@ HTTP Server Express skeleton with Gulp + Browsersync + Nodemon
 $ git clone https://github.com/andrehrf/expressneverrefresh.git
 $ cd expressneverrefresh
 $ npm install -g gulp
+$ npm install
 $ gulp
 ```
 
