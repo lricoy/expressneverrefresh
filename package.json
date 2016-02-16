@@ -1,6 +1,6 @@
 {
     "name": "express-never-refresh",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "HTTP Server Express skeleton with Gulp + Browsersync + Nodemon",
     "keywords": ["express", "gulp", "browsersync", "nodemon"],
     "homepage": "https://github.com/andrehrf/expressneverrefresh",

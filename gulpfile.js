@@ -13,7 +13,7 @@ var spawn = require("child_process").spawn,
     nodeInspector = require("gulp-node-inspector"),
     browserSync = require("browser-sync");
     
-gulp.task("default", ["browser-sync", "nodemon"], function(){
+gulp.task("default", ["browser-sync", "nodemon", "debug"], function(){
 
 });
 

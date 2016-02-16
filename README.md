@@ -15,6 +15,9 @@ $ npm install
 $ gulp
 ```
 
+## Vídeo (in Portuguese)
+[![Node.js: Gulp + Nodemon + Browsersync](http://img.youtube.com/vi/xtWnX_WMcIA/0.jpg)](https://www.youtube.com/watch?v=xtWnX_WMcIA)
+
 ### License
 
 [MIT license](http://opensource.org/licenses/MIT)
