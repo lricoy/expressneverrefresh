@@ -1,16 +1,22 @@
 {
     "name": "express-never-refresh",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "HTTP Server Express skeleton with Gulp + Browsersync + Nodemon",
     "keywords": ["express", "gulp", "browsersync", "nodemon"],
     "homepage": "https://github.com/andrehrf/expressneverrefresh",
     "author": "André Ferreira <andrehrf@gmail.com>",
     "license": "MIT",
-    "repository": "andrehrf/expressneverrefresh",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/andrehrf/expressneverrefresh.git"
+    },
+    "bugs": {
+        "url": "https://github.com/andrehrf/expressneverrefresh/issues"
+    },    
     "dependencies": {
         "gulp": "^3.9.1",        
         "gulp-nodemon": "^2.0.6",
-        "gulp-node-inspector": "*",
+        "gulp-node-inspector": "^0.1.0",
         "express": "^4.13.4",
         "morgan": "^1.6.1",
         "compression": "^1.6.0",
