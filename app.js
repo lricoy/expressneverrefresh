@@ -1,6 +1,6 @@
 /**
  * Main File Application
- * 
+ *
  * @author André Ferreira <andrehrf@gmail.com>
  * @license MIT
  */
@@ -15,13 +15,13 @@ var cluster = require("cluster"),//Usage Cluster of Node.js
     cookieParser = require("cookie-parser"),//Module for cookie management in Express
     bodyParser = require("body-parser"),//Module for processing HTTP requests in Express
     compression = require("compression");//Gzip compression module for Express
-    
+
 if(cluster.isMaster){
     var cpuCount = require('os').cpus().length;
 
     for(var i = 0; i < cpuCount; i += 1)
         cluster.fork();
-    
+
     cluster.on('exit', function (worker) {
         console.log('Worker %d died :(', worker.id);
         cluster.fork();
@@ -33,10 +33,10 @@ else{
     app.use(cookieParser("MyApp"));//Cookies Management
     app.use(bodyParser.urlencoded({extended: false, limit: '10mb'}));
     app.use(bodyParser.json());
-    app.use(express.static("public"));
+    // app.use(express.static("public"));
 
     app.get("/", function(req, res){
-        res.sendFile(__dirname + "/public/index.html");
+        res.send("<h1>Hello from worker: " +cluster.worker.id+"</h2>");
     });
 
     http.listen(3000, function(){
